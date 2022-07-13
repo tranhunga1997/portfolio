@@ -479,6 +479,7 @@ footer .copyright {
     padding: 16px 23px;
     background-color: var(--my-component-color);
     box-shadow: 0 0 12px rgb(255 0 0);
+    transition: box-shadow ease-in-out 0.2s;
 }
 
 .on-top-btn:hover {
