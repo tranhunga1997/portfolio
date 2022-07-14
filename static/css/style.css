@@ -50,7 +50,7 @@ a {
     text-align: center;
 }
 
-.active {
+.btn-active {
     background-color: var(--my-component-color) !important;
 }
 
@@ -304,6 +304,10 @@ nav .container-fluid {
     padding: 6em 0;
 }
 
+.testimonials .slider-items {
+    margin-top: 4em;
+}
+
 .testimonials .slider-item {
     display: flex;
     flex-direction: column;
@@ -348,10 +352,12 @@ nav .container-fluid {
 }
 
 .our-blog .card {
+    --border-r-size: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
     width: calc(96% / 3);
+    border-radius: var(--border-r-size) var(--border-r-size) 0 0;
 }
 
 .our-blog .card::before {
@@ -372,6 +378,7 @@ nav .container-fluid {
 .our-blog .card .content {
     padding: 25px;
     background-color: var(--bg-color-1);
+    border-radius: 0 0 var(--border-r-size) var(--border-r-size);
 }
 
 .our-blog .card .content .title {
@@ -402,12 +409,12 @@ nav .container-fluid {
 
 .contact .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 4em;
 }
 
 .contact .wrapper form {
-    width: 60%;
+    width: 45%;
 }
 
 .contact .wrapper .form-control {
@@ -421,6 +428,7 @@ nav .container-fluid {
 
 .contact .wrapper .contact-info {
     width: 30%;
+    max-width: 40%;
 }
 
 .contact .wrapper form .send-btn {
@@ -480,8 +488,17 @@ footer .copyright {
     background-color: var(--my-component-color);
     box-shadow: 0 0 12px rgb(255 0 0);
     transition: box-shadow ease-in-out 0.2s;
+    transition: transform ease-in-out 0.5s;
+    transform: translateY(200%);
+    /* visibility: hidden; */
+
 }
 
 .on-top-btn:hover {
     box-shadow: 0 0 64px rgb(255 0 0);
+}
+
+.on-top-btn.open {
+    transform: translateY(0);
+    /* visibility: visible; */
 }
