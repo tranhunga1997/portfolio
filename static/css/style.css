@@ -62,6 +62,12 @@ nav {
     right: 0;
     top: 0;
     z-index: 10;
+    box-shadow: 0 0 6px var(--text-color);
+}
+
+nav h1 {
+    letter-spacing: 2px;
+    font-size: 2em;
 }
 
 nav .container-fluid {
@@ -91,6 +97,7 @@ nav .container-fluid {
     cursor: pointer;
 }
 
+.switcher-active,
 .switcher:hover {
     color: var(--my-component-color);
     transform: scale(1.5);
@@ -150,6 +157,7 @@ nav .container-fluid {
 
 .about-me img {
     max-width: 45%;
+    box-shadow: 0 0 6px var(--text-color);
 }
 
 .about-me .content p {
@@ -167,6 +175,10 @@ nav .container-fluid {
     background-color: var(--bg-color-2);
     padding-top: 6em;
     padding-bottom: 6em;
+}
+
+.services .section-title {
+    padding-bottom: 2em;
 }
 
 .services .container {
@@ -397,7 +409,7 @@ nav .container-fluid {
 .our-blog .card .content .text-content {
     font-size: 0.8em;
     font-weight: 400;
-    color: #bdbfc0;
+    color: var(--our-blog-text-content);
     line-height: 26px;
 }
 
@@ -487,10 +499,9 @@ footer .copyright {
     padding: 16px 23px;
     background-color: var(--my-component-color);
     box-shadow: 0 0 12px rgb(255 0 0);
-    transition: box-shadow ease-in-out 0.2s;
-    transition: transform ease-in-out 0.5s;
+    transition: box-shadow ease-in-out 0.2s, transform ease-in-out 0.5s;
     transform: translateY(200%);
-    /* visibility: hidden; */
+    cursor: pointer;
 
 }
 
@@ -500,5 +511,4 @@ footer .copyright {
 
 .on-top-btn.open {
     transform: translateY(0);
-    /* visibility: visible; */
 }

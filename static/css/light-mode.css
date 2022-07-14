@@ -1,6 +1,8 @@
 :root {
-    --component-color: #e0a80d;
+    --my-component-color: #e0a80d;
     --text-color: #000;
-    --bg-color-1: #000;
-    --bg-color-2: #595959;
+    --bg-color-1: #f2f2f2;
+    --bg-color-2: #ffffff;
+    --footer-bg-color: #d9d9d9;
+    --our-blog-text-content: #404040
 }

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Tran Manh Hung</title>
     <link rel="shortcut icon" href="./static/imgs/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./static/css/dark-mode.css">
+    <link rel="stylesheet" href="./static/css/dark-mode.css" id="dardMode" >
+    <link rel="stylesheet" href="./static/css/light-mode.css" id="lightMode" disabled>
     <link rel="stylesheet" href="./static/css/owl.carousel.css">
     <link rel="stylesheet" href="./static/css/owl.theme.green.css">
     <link rel="stylesheet" href="./static/css/style.css">
@@ -19,7 +20,10 @@
     <!-- Navigation start -->
     <nav>
         <div class="container-fluid">
-            <a href=""><img src="./static/imgs/logo.png" alt="logo" width="42px" height="42px"></a>
+            <a href="">
+                <!-- <img src="./static/imgs/logo.png" alt="logo" width="42px" height="42px"> -->
+                <h1>Portfo<span style="color: var(--my-component-color);">lio</span></h1>
+            </a>
             <ul class="navigation">
                 <li><a href="#slides">home</a></li>
                 <li><a href="#aboutMe">about</a></li>
@@ -28,7 +32,7 @@
                 <li><a href="#testimonials">testimonials</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
-            <div class="switcher">
+            <div class="switcher" id="switcherAction">
                 <i class="fa-solid fa-sun"></i>
             </div>
         </div>
@@ -322,7 +326,7 @@
     </footer>
     <!-- Footer end -->
     <!-- On top button start -->
-    <a href="#slides" class="on-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
+    <a class="on-top-btn" onclick="window.scroll(0,0)" ><i class="fa-solid fa-arrow-up"></i></a>
     <!-- On top button end -->
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
