@@ -25,3 +25,19 @@ document.querySelector('#switcherAction').addEventListener('click', function () 
         this.classList.add('switcher-active')
     }
 })
+
+$(document).ready(function() {
+    // counter up: tăng dần từ 0 đến sô chỉ định
+    $('.counter').counterUp({
+        delay: 1,
+        time: 1000,
+    })
+
+    // slider
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        autoplay:true,
+        margin:10,
+        items: 1,
+    })
+})

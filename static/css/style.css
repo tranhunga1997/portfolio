@@ -78,6 +78,14 @@ nav .container-fluid {
     padding-right: 4em;
 }
 
+.mobile-navigation {
+    display: none;
+    font-size: 1.7em;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: 10px;
+}
 .navigation li {
     display: inline-block;
     list-style-type: none;
@@ -214,8 +222,9 @@ nav .container-fluid {
 }
 
 .some-fact .container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: calc(100%/4) calc(100%/4) calc(100%/4) calc(100%/4);
+    column-gap: 1em;
 }
 
 .some-fact .box-content {
@@ -254,6 +263,7 @@ nav .container-fluid {
 .portfolio .button-group {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .portfolio .button-group button+button {
@@ -308,6 +318,10 @@ nav .container-fluid {
 
 .portfolio .list-item .item:hover .overlay {
     opacity: 1;
+}
+
+.portfolio .list-item .overlay .icon {
+    cursor: pointer;
 }
 
 /* TESTIMONALS */
@@ -511,4 +525,107 @@ footer .copyright {
 
 .on-top-btn.open {
     transform: translateY(0);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--my-component-color);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container,
+    .slides .content {
+        width: 95%;
+    }
+
+    nav .container-fluid {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    
+    nav h1 {
+        font-size: 1.5em;
+    }
+
+    .mobile-navigation {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        position: absolute;
+        background-color: var(--bg-color-1);
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .navigation li {
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 1.1em;
+    }
+
+    .about-me .content {
+        margin-left: 16px;
+    }
+
+    .about-me img {
+        display: none;
+    }
+
+    .services .container {
+        grid-template-columns: 100%;
+        row-gap: 1em;
+    }
+
+    .services .box-content {
+        padding: 16px;
+    }
+
+    .some-fact .container {
+        grid-template-columns: 100%;
+        row-gap: 2.3em;
+    }
+
+    .portfolio .list-item {
+        margin-top: 60px;
+        grid-template-columns: calc(100% / 2) calc(100% / 2);
+        gap: 8px;
+    }
+
+    .our-blog .cards {
+        flex-direction: column;
+    }
+
+    .our-blog .card {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .contact .wrapper {
+        flex-direction: column;
+    }
+
+    .contact .wrapper form {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .contact .wrapper .contact-info {
+        width: unset;
+        max-width: unset;
+        text-align: center;
+    }
+    
+    .contact .wrapper .contact-info span {
+        display: block;
+    }
 }
