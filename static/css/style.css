@@ -50,6 +50,18 @@ a {
     text-align: center;
 }
 
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline-color: var(--my-component-color);
+}
+
 .btn-active {
     background-color: var(--my-component-color) !important;
 }
@@ -443,15 +455,6 @@ nav .container-fluid {
     width: 45%;
 }
 
-.contact .wrapper .form-control {
-    width: 100%;
-    padding: 1em;
-    border-radius: 10px;
-    border: none;
-    margin-bottom: 1em;
-    outline-color: var(--my-component-color);
-}
-
 .contact .wrapper .contact-info {
     width: 30%;
     max-width: 40%;
@@ -564,6 +567,10 @@ footer .copyright {
         right: 0;
         height: 100vh;
         text-align: center;
+    }
+
+    .navigation.open {
+        display: block;
     }
 
     .navigation li {
