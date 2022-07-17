@@ -1,0 +1,22 @@
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 38px 0;
+    text-align: center;
+
+    .social span {
+        padding: 0 8px;
+        font-size: 1.3em;
+        color: var(--my-component-color);
+        opacity: 0.7;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .copyright {
+        font-size: 0.9em;
+        margin-top: 12px;
+        opacity: 0.7;
+    }
+}

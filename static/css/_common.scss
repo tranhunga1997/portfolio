@@ -1,0 +1,81 @@
+@mixin section-title($mb) {
+    font-size: 2em;
+    color: var(--my-component-color);
+    text-align: center;
+    margin-bottom: $mb;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-fluid {
+    max-width: 100%;
+    padding: 1em 0;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+
+    @media screen and (max-width: 768px) {
+        width: 95%;
+    }
+}
+
+.btn {
+    padding: 10px 30px;
+    border: 2px solid var(--my-component-color);
+    border-radius: 30px;
+}
+
+.btn-outline:hover {
+    background-color: var(--my-component-color);
+}
+
+.typed-cursor {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline-color: var(--my-component-color);
+}
+
+.btn-active {
+    background-color: var(--my-component-color) !important;
+}
