@@ -427,3 +427,24 @@
         }
     }
 }
+/* ON TOP BTN */
+.on-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 36px;
+    border-radius: 100%;
+    padding: 16px 23px;
+    background-color: var(--my-component-color);
+    box-shadow: 0 0 12px rgb(255 0 0);
+    transition: box-shadow ease-in-out 0.2s, transform ease-in-out 0.5s;
+    transform: translateY(200%);
+    cursor: pointer;
+}
+
+.on-top-btn:hover {
+    box-shadow: 0 0 64px rgb(255 0 0);
+}
+
+.on-top-btn.open {
+    transform: translateY(0);
+}

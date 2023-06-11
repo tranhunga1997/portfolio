@@ -7,7 +7,7 @@ window.addEventListener('scroll', function () {
             onTopBtn.classList.add('open')
         }
     } else {
-        if(!onTopBtn.classList.contains('open')) {
+        if(onTopBtn.classList.contains('open')) {
             onTopBtn.classList.remove('open')
         }
     }

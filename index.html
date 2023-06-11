@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Tran Manh Hung</title>
     <link rel="shortcut icon" href="./static/imgs/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./static/css/dark-mode.css" id="dardMode" >
+    <link rel="stylesheet" href="./static/css/dark-mode.css" id="dardMode">
     <link rel="stylesheet" href="./static/css/light-mode.css" id="lightMode" disabled>
     <link rel="stylesheet" href="./static/css/owl.carousel.css">
     <link rel="stylesheet" href="./static/css/owl.theme.default.css">
@@ -25,12 +25,12 @@
                 <h1>Portfo<span style="color: var(--my-component-color);">lio</span></h1>
             </a>
             <ul class="navigation">
-                <li><a href="#slides">home</a></li>
-                <li><a href="#aboutMe">about</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#testimonials">testimonials</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a data-i18n="navigation.home" href="#slides">home</a></li>
+                <li><a data-i18n="navigation.about" href="#aboutMe">about</a></li>
+                <li><a data-i18n="navigation.skills" href="#services">skills</a></li>
+                <li><a data-i18n="navigation.portfolio" href="#portfolio">portfolio</a></li>
+                <li><a data-i18n="navigation.testimonials" href="#testimonials">testimonials</a></li>
+                <li><a data-i18n="navigation.contact" href="#contact">contact</a></li>
             </ul>
             <div class="switcher" id="switcherAction">
                 <i class="fa-solid fa-sun"></i>
@@ -46,9 +46,10 @@
         <div class="content">
             <p class="text-hello">Hello i'm</p>
             <h1 id="authorName"><span></span></h1>
-            <p class="text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, dolorum voluptas eius
+            <!-- <p class="text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, dolorum voluptas eius
                 accusamus nam officiis, eveniet quaerat ipsa temporibus dolorem alias excepturi repudiandae tempore
-                necessitatibus consequatur rem voluptatibus sed veritatis.</p>
+                necessitatibus consequatur rem voluptatibus sed veritatis.</p> -->
+            <br>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
     </section>
@@ -60,14 +61,15 @@
             <img src="./static/imgs/man.png" alt="">
             <div class="content">
                 <h1 class="section-title">About me</h1>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam
-                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                    consequuntur
-                    <br>
-                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-                    quia dolor si voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                <p>
+                    Xin chào! Tôi là Trần Mạnh Hùng, sống tại Tokyo (Nhật Bản) là một chuyên gia IT với đam mê sâu sắc
+                    với công nghệ và các giải pháp
+                    số. Với
+                    nhiều năm kinh nghiệm làm việc trong lĩnh vực IT, tôi đã phát triển một kiến thức chuyên sâu về phân
+                    tích hệ thống, quản lý dự án và phát triển ứng dụng. Tôi có kỹ năng vững trong các ngôn ngữ lập
+                    trình như Javascript, Java và C#, và đã thực hiện nhiều dự án phần mềm. Bên cạnh
+                    đó, tôi cũng có kinh nghiệm trong xây dựng hạ tầng mạng và quản lý cơ sở dữ liệu. Tôi luôn sẵn lòng
+                    khám phá những công nghệ mới và áp dụng chúng để giải quyết các thách thức trong lĩnh vực IT.
                 </p>
                 <a href="" class="btn btn-outline">Download CV</a>
                 <a href="#portfolio" class="btn btn-outline">Portfolio</a>
@@ -78,43 +80,52 @@
 
     <!-- Services start -->
     <section class="services" id="services">
-        <h1 class="section-title">Services</h1>
+        <h1 class="section-title">Skills</h1>
         <div class="container">
             <div class="box-content">
-                <span class="icon"><i class="fa-solid fa-gear"></i></span>
-                <h2 class="title">Creative Design</h2>
-                <p class="text-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aperiam
-                    cupiditate perferendis odio veritatis aspernatur.</p>
-            </div>
-            <div class="box-content">
-                <span class="icon"><i class="fa-solid fa-crop"></i></span>
-                <h2 class="title">Clean Code</h2>
-                <p class="text-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aperiam
-                    cupiditate perferendis odio veritatis aspernatur.</p>
-            </div>
-            <div class="box-content">
-                <span class="icon"><i class="fa-solid fa-cubes"></i></span>
-                <h2 class="title">Responsive Design</h2>
-                <p class="text-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aperiam
-                    cupiditate perferendis odio veritatis aspernatur.</p>
-            </div>
-            <div class="box-content">
-                <span class="icon"><i class="fa-solid fa-chart-pie"></i></span>
-                <h2 class="title">Bootstrap 4</h2>
-                <p class="text-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aperiam
-                    cupiditate perferendis odio veritatis aspernatur.</p>
-            </div>
-            <div class="box-content">
                 <span class="icon"><i class="fa-solid fa-code"></i></span>
-                <h2 class="title">Font Icons</h2>
-                <p class="text-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aperiam
-                    cupiditate perferendis odio veritatis aspernatur.</p>
+                <h2 class="title">OOP</h2>
+                <p class="text-content">Khả năng lập trình hướng đối tượng của tôi là nền tảng vững chắc để xây dựng
+                    phần mềm linh hoạt và dễ bảo trì. Tôi có khả năng thiết kế và triển khai các lớp, đối tượng, và kế
+                    thừa, tạo ra source code sáng tạo và dễ đọc. Việc sử dụng các khái niệm như đóng gói, đa hình và
+                    trừu
+                    tượng giúp tôi xây dựng các ứng dụng chất lượng và dễ mở rộng.</p>
             </div>
             <div class="box-content">
-                <span class="icon"><i class="fa-solid fa-chart-column"></i></span>
-                <h2 class="title">Awesome Support</h2>
-                <p class="text-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aperiam
-                    cupiditate perferendis odio veritatis aspernatur.</p>
+                <span class="icon"><i class="fa-solid fa-bug"></i></span>
+                <h2 class="title">Test and Debug</h2>
+                <p class="text-content">Tôi có khả năng phát hiện lỗi, phân tích vấn đề và áp dụng các biện pháp sửa
+                    chữa hiệu quả. Sự cẩn thận, kiên nhẫn và khả năng phân tích tôi mang lại giúp đảm bảo rằng phần mềm
+                    hoạt động một cách trơn tru và tương thích với các yêu cầu và tiêu chuẩn.</p>
+            </div>
+            <div class="box-content">
+                <span class="icon"><i class="fa-solid fa-database"></i></span>
+                <h2 class="title">Database</h2>
+                <p class="text-content">Khả năng của tôi trong việc quản lý cơ sở dữ liệu giúp tối ưu hóa hiệu suất và
+                    đảm bảo tính nhất quán của hệ thống. Tôi có kiến thức vững về thiết kế cơ sở dữ liệu, truy vấn dữ
+                    liệu và tối ưu hóa câu lệnh SQL. Sự hiểu biết về các hệ quản trị cơ sở dữ liệu (DBMS) như MySQL hoặc
+                    PostgreSQL giúp tôi xây dựng và duy trì cơ sở dữ liệu một cách hiệu quả.</p>
+            </div>
+            <div class="box-content">
+                <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+                <h2 class="title">Project Management</h2>
+                <p class="text-content">Với khả năng quản lý dự án, tôi có thể lập kế hoạch chi tiết, phân công công
+                    việc và theo dõi tiến độ một cách chính xác. Sự tổ chức, kiểm soát rủi ro và tạo môi trường làm việc
+                    hiệu quả là những yếu tố quan trọng tôi đem đến để đảm bảo thành công của dự án.</p>
+            </div>
+            <div class="box-content">
+                <span class="icon"><i class="fa-solid fa-book"></i></span>
+                <h2 class="title">Self-study</h2>
+                <p class="text-content">Khả năng tự học của tôi là một lợi thế vượt trội trong việc nắm bắt các công
+                    nghệ mới và cập nhật kiến thức. Tôi có khả năng tìm hiểu, nghiên cứu và áp dụng những kiến thức mới
+                    một cách nhanh chóng và hiệu quả.</p>
+            </div>
+            <div class="box-content">
+                <span class="icon"><i class="fa-solid fa-search"></i></span>
+                <h2 class="title">Research</h2>
+                <p class="text-content">Tôi có khả năng sử dụng các công cụ và phương pháp research hiệu quả để tìm
+                    hiểu về các công nghệ mới, giải quyết các vấn đề kỹ thuật và cung cấp giải pháp sáng tạo. Tôi luôn
+                    sẵn lòng tiếp thu kiến thức mới và áp dụng nó vào công việc để đạt được kết quả tốt nhất.</p>
             </div>
         </div>
     </section>
@@ -131,7 +142,7 @@
             <div class="box-content">
                 <span class="icon"><i class="fa-solid fa-heart"></i></span>
                 <p class="number-content counter">937</p>
-                <p class="text-content">PROJECTS COMPLEATED</p>
+                <p class="text-content">PROJECTS COMPLETED</p>
             </div>
             <div class="box-content">
                 <span class="icon"><i class="fa-solid fa-earth-asia"></i></span>
@@ -141,7 +152,7 @@
             <div class="box-content">
                 <span class="icon"><i class="fa-solid fa-users"></i></span>
                 <p class="number-content counter">5946</p>
-                <p class="text-content">LIENS OF CODE</p>
+                <p class="text-content">LINES OF CODE</p>
             </div>
         </div>
     </section>
@@ -309,7 +320,7 @@
                 <div class="contact-info">
                     <span><i class="fa-solid fa-location-dot"></i></span>
                     <p>Tokyo, Japan</p>
-                        <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    <span><i class="fa-solid fa-mobile-screen-button"></i></span>
                     <p>非表示</p>
                     <span><i class="fa-solid fa-at"></i></span>
                     <p>tranhungc1997@gmail.com</p>
@@ -325,11 +336,10 @@
             <span><i class="fa-brands fa-facebook-f"></i></span>
             <span><i class="fa-brands fa-line"></i></span>
         </div>
-        <p class="copyright">All Right Resceved 2018</p>
     </footer>
     <!-- Footer end -->
     <!-- On top button start -->
-    <a class="on-top-btn" onclick="window.scroll(0,0)" ><i class="fa-solid fa-arrow-up"></i></a>
+    <a class="on-top-btn" onclick="window.scroll(0,0)"><i class="fa-solid fa-arrow-up"></i></a>
     <!-- On top button end -->
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
@@ -337,6 +347,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
 <script src="./static/js/owl.carousel.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
 <script src="./static/js/typed.js"></script>
 <script src="./static/js/style.js"></script>
 
