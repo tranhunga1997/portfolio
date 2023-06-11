@@ -148,12 +148,41 @@ nav .mobile-navigation {
     display: block;
   }
 }
-nav .switcher {
+nav .language-container {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+nav .language-container .languages {
+  margin-right: 24px;
+  position: relative;
+  cursor: pointer;
+}
+nav .language-container .languages:hover .lang-item {
+  display: block;
+}
+nav .language-container .languages .lang-item {
+  display: none;
+  position: absolute;
+  padding: 6px 4px;
+  list-style-type: none;
+  width: 8em;
+  background-color: var(--bg-color-1);
+  box-shadow: 0px 10px 22px -13px var(--text-color);
+}
+nav .language-container .languages .lang-item li {
+  display: block;
+  padding: 2px 8px;
+}
+nav .language-container .languages .lang-item li:hover {
+  color: var(--my-component-color);
+}
+nav .language-container .switcher {
   font-size: 1.5em;
   transition: all ease-out 0.3s;
   cursor: pointer;
 }
-nav .switcher-active, nav .switcher:hover {
+nav .language-container .switcher-active, nav .language-container .switcher:hover {
   color: var(--my-component-color);
   transform: scale(1.5);
 }

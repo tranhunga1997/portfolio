@@ -1,0 +1,15 @@
+{
+    "navigation": {
+        "home": "home",
+        "about": "about",
+        "skills": "skills",
+        "portfolio": "portfolio",
+        "testimonials": "testimonials",
+        "contact": "contact"
+    },
+    "language": {
+        "english": "english",
+        "vietnam": "vietnam",
+        "japan": "japan"
+    }
+}

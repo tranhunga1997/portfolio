@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -32,8 +32,18 @@
                 <li><a data-i18n="navigation.testimonials" href="#testimonials">testimonials</a></li>
                 <li><a data-i18n="navigation.contact" href="#contact">contact</a></li>
             </ul>
-            <div class="switcher" id="switcherAction">
-                <i class="fa-solid fa-sun"></i>
+            <div class="language-container">
+                <div class="languages">
+                    language <i class="fas fa-chevron-down"></i>
+                    <ul class="lang-item">
+                        <li data-i18n="language.english" onclick="changeLang('en')">english</li>
+                        <li data-i18n="language.vietnam" onclick="changeLang('vi')">vietNam</li>
+                        <li data-i18n="language.japan" onclick="changeLang('ja')">japan</li>
+                    </ul>
+                </div>
+                <div class="switcher" id="switcherAction">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
             </div>
             <button type="button" class="mobile-navigation"><i class="fa-solid fa-bars"></i></button>
 
@@ -348,6 +358,7 @@
 <script src="./static/js/owl.carousel.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js" defer></script>
+<script src="./static/js/translator.js" type="module"></script>
 <script src="./static/js/typed.js"></script>
 <script src="./static/js/style.js"></script>
 

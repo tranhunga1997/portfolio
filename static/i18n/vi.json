@@ -1,0 +1,15 @@
+{
+    "navigation": {
+        "home": "trang chủ",
+        "about": "",
+        "skills": "kỹ năng",
+        "portfolio": "portfolio",
+        "testimonials": "testimonials",
+        "contact": "liên hệ"
+    },
+    "language": {
+        "english": "tiếng anh",
+        "vietnam": "tiếng việt",
+        "japan": "tiếng nhật"
+    }
+}

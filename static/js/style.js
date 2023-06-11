@@ -1,3 +1,50 @@
+/**
+ * Class xử lý đa ngôn ngữ.
+ * Ngôn ngữ được define ở folder i18n
+ */
+class Translator {
+    constructor() {
+        this._lang = this.getLanguage();
+        this._elements = document.querySelectorAll("[data-i18n]");
+    }
+    getLanguage() {
+        let lang = navigator.languages ? navigator.languages[0] : navigator.language;
+        return lang.substr(0, 2)
+    }
+    load(lang = null) {
+        if (lang) {
+            this._lang = lang;
+        }
+        fetch(`/static/i18n/${this._lang}.json`)
+            .then((res) => res.json())
+            .then((translation) => {
+                this.translate(translation);
+            })
+            .catch(() => {
+                console.error(`Could not load ${this._lang}.json.`);
+            });
+    }
+    translate(translation) {
+        this._elements.forEach((element) => {
+            var keys = element.dataset.i18n.split(".");
+            var text = keys.reduce((obj, i) => obj[i], translation);
+            if (text) {
+                element.innerHTML = text;
+            }
+        });
+    }
+    toggleLangTag() {
+        if (document.documentElement.lang !== this._lang) {
+            document.documentElement.lang = this._lang;
+        }
+    }
+}
+let translator = new Translator();
+
+function changeLang(lang) {
+    translator.load(lang);
+}
+
 // Bắt sự kiện scroll hiện nút on top
 window.addEventListener('scroll', function () {
     let scrollValue = this.scrollY
@@ -90,3 +137,9 @@ contactForm.onsubmit = function(e) {
     }
     
 }
+
+// Xử lý sự kiện onLoad
+document.addEventListener('DOMContentLoaded', function(e) {
+    let lang = document.documentElement.lang
+    translator.load(lang)
+})
